@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag HTML5</title>
+
+    <link rel="stylesheet" href="style.css">  <!--folha de estilo CSS-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <!--inserir Favicon-->
+
+    
+</head>
+<body>
+
+    <script>
+        /*
+        alert('Permissão para acessar?')
+        prompt('Qual o seu nome?')
+        confirm('Você tem certeza que quer prosseguir?')
+        */      
+    </script>
+
+    <h1 id="indice">Índice</h1>
+        <h2>Índice de tópicos</h2>
+        <ul>
+            <li><a href="#títulos">Títulos e paragrafos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#imagens">Imagens</a></li>
+            <li><a href="#audio">Áudio</a></li>
+            <li><a href="#link">Link</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#formulario">Formulário</a></li>
+
+        </ul>
+
+    <h1 id="títulos">Título e paragrafo</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>Os títulos são definidos pelas tag <strong>h1 até h6</strong>, a os parágrafos são definidos pela tag <strong>p</strong>, quebra de linha com a tag <strong>br</strong> e inserir uma linha com a tag <strong>hr</strong>.</p>
+
+    <hr>
+
+    <h1 id="listas">Listas</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>As listas estão divididas em não ordenadas, ordenadas e de definição.</p>
+    <p>Nas <mark>não ordenadas</mark> utilizamos duas tags, a <strong>ul</strong> em seguida a tag <strong>li</strong>.</p>
+    <p>Nas listas <mark>ordenadas</mark> utilizamos a tag <strong>ol</strong> e em seguida a mesma tag <strong>li</strong>.</p>
+    <p>Já nas <mark>listas de definição</mark> as tags mudam para <strong>dl</strong>, <strong>dt</strong>, que é o termo e <strong>dd</strong> que é a definição do termo.</p>
+    <h2>Não ordenadas</h2>
+
+    <ul type="disc">  <!--type = circle, square, disc -->
+        <li>primeiro</li>
+        <li>segundo</li>
+        <li>terceiro</li>
+        <li>quarto</li>
+        <li>quinto</li>
+    </ul>
+
+    <h2>Ordenadas</h2>
+
+    <ol type="A">  <!--type = 1, A, a, i, I -->
+        <li>primeiro</li>
+        <li>segundo</li>
+        <li>terceiro</li>
+        <li>quarto</li>
+        <li>quinto</li>
+    </ol>
+
+    <h2>lista de definição</h2>
+
+    <dl>
+        <dt>HTML5</dt>   <!--termo-->
+        <dd>Hiper Text Markup Language</dd>   <!--descrição-->
+    </dl>
+
+    <hr>
+
+    <h1 id="imagens">Imagens</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>Podemos inserir imagens com a tag <strong>img</strong>, e em imagens adaptáveis ao browser utilizamos a tag <strong>picture</strong>, e incluimos dentro dela os <strong>source</strong> do tamanho das imagens.</p>
+    <img src="img/google_1.gif" width=50 alt="gif Google">  <!--width=largura, heigth=altura-->
+
+    <h2>Imagens flexiveis/dinâmica</h2>  <!--imagem que se adapta no tamanho da tela do browser-->
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="img/paisagem-700.jpg" type="image/jpg">
+        <img src="img/paisagem-1000.jpg" alt="imagem flexivel">
+    </picture>
+
+    <hr>
+
+    <h1 id="audio">Áudio</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>Em áudios podemos utilizar a tag <strong>audio</strong>, e devemos incluir também alguns parametros como o <i>controls autoplay</i> e informar o tipo de audio, sendo no formato <mark>MP3 o tipo mpeg</mark></p>
+    <audio src="aud/Dead_Drop.mp3" controls type=audio/mpeg></audio>
+    <audio src="aud/01. Your Love Is King.mp3" controls type=audio/mpeg></audio>
+
+    <hr>
+
+    <h1 id="link">Link</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>Podemos inserir link com a tag <strong>a</strong></p>
+    <a href="pag 2.html">Página 2</a>
+    <a href="https://www.google.com.br/"><img src="img/google_1.gif" width=50 alt="gif Google"></a>
+    <a href="https://www.instagram.com/nanysfest/"><img src="img/logo nanys.png" alt="logo nanys fest"></a>
+
+    <hr>
+
+    <h1 id="tabelas">Tabelas</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <p>Para criação de tabelas usamos basicamente 3 tags. Uma delas é a tag <strong>table</strong>, a outra é a tag <strong></strong></p>
+
+    <table border=5 width=50% height=200>
+        <tr>   <!--linha da tabela-->
+            <th>cabeçalho 1</th>  <!--th = cabeçalho-->
+            <th>cabeçalho 2</th>
+            <th>cabeçalho 3</th>
+        </tr>
+        <tr>   
+            <td >linha 1 coluna 1</td>   <!--dados da tabela-->
+            <td>linha 1 coluna 2</td>
+            <td>linha 1 coluna 3</td>
+        </tr>    
+        
+        <tr>
+            <td>linha 2 coluna 1</td>
+            <td>linha 2 coluna 2</td>
+            <td>linha 2 coluna 3</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">linha 3 coluna 1 mesclada com linha 4</td>
+            <td colspan="3">linha 3 coluna 2 mesclada com coluna 3</td>   <!--colspan = mesclar células em linha-->
+        </tr>
+
+        <tr>
+            <td colspan="3">linha 4 coluna 2 mesclada com coluna 3</td>   <!--colspan = mesclar células em linha-->
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1 id="formulario">Formulário</h1>
+    <small>
+        <blockquote><a href="#indice">indice</a></blockquote>
+    </small>
+    <h3>Login</h3>
+
+    <form action="pagina de processamento">
+        Login: <br>
+        <input type="text" name="login"> <br>
+        Senha: <br>
+        <input type="password" name="senha"> <br>
+        <input type="submit" value="Logar">
+    </form>
+
+    <h3>Cadastro</h3>
+
+    <form action="">
+        Nome: <br>
+        <input type="text" name="nome"> <br>
+
+        Endereço: <br>
+        <input type="text" name="end"> <br>
+
+        Estado: <br>
+        <select name="estado" id="">
+            <option value="ce">CE</option>
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="rs">RS</option>
+        </select> 
+        <br>
+
+        Telefone: <br>
+        <input type="text" name="tel"> <br>
+
+        Sexo: <br>
+        <input type="radio" name="sexo" value="M"> Masculino <br>
+        <input type="radio" name="sexo" value="F"> Feminino <br>
+
+        Interesse: <br>
+        <input type="checkbox" name="interesse" value="pri"> primeiro <br>
+        <input type="checkbox" name="interesse" value="seg"> segundo <br>
+        <input type="checkbox" name="interesse" value="ter"> terceiro <br>
+
+        Observações: <br>
+        <input type="textarea">
+
+
+        <input type="submit" value="Logar">
+
+    </form>
+    
+    <br>
+    <hr>
+
+    <h1>Testes</h1>
+    <h2>Teste tabela com audio</h2>
+
+    <table>
+        <tr>
+            <td><audio src="aud/Dead_Drop.mp" controls type=audio/mpeg></audio></td>
+            <td><audio src="aud/01. Your Love Is King.mp" controls type=audio/mpeg></audio></td>
+        </tr>
+
+        <audio controls autoplay>
+            <source src="aud/Track 1.wa" type="audio/wav">
+
+        </audio>
+
+        <tr>
+            <td><small>Dead Drop</small></td>
+            <td><small>Sade</small></td>
+        </tr>
+    </table>//
+
+    <a href="pag 3.html">Página 3</a>
+     
+</body>
+</html>
